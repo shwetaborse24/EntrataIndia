@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-20T19:50:17 IST" name="RegressionOnWebsite" finished-at="2024-10-20T19:51:21 IST" duration-ms="63816">
+    <groups>
+    </groups>
+    <test started-at="2024-10-20T19:50:17 IST" name="HomePage" finished-at="2024-10-20T19:51:21 IST" duration-ms="63816">
+      <class name="entrata.website.test.homepage.EntrataHomeTest">
+        <test-method is-config="true" signature="readProperties(java.lang.String)[pri:0, instance:entrata.website.test.homepage.EntrataHomeTest@7a1234bf]" started-at="2024-10-20T19:50:17 IST" name="readProperties" finished-at="2024-10-20T19:50:17 IST" duration-ms="27" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readProperties -->
+        <test-method is-config="true" signature="Setup(org.testng.ITestContext,java.lang.String)[pri:0, instance:entrata.website.test.homepage.EntrataHomeTest@7a1234bf]" started-at="2024-10-20T19:50:17 IST" name="Setup" finished-at="2024-10-20T19:50:33 IST" duration-ms="15949" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7577b641]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="A01_VerifyTitle()[pri:0, instance:entrata.website.test.homepage.EntrataHomeTest@7a1234bf]" started-at="2024-10-20T19:50:33 IST" name="A01_VerifyTitle" description="Navigate to Entrata landing page and get title" finished-at="2024-10-20T19:50:36 IST" duration-ms="3039" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A01_VerifyTitle -->
+        <test-method signature="A02_VerifySignInOption()[pri:0, instance:entrata.website.test.homepage.EntrataHomeTest@7a1234bf]" started-at="2024-10-20T19:50:36 IST" name="A02_VerifySignInOption" description="Navigate to Sign In Option and Enter Required Details" finished-at="2024-10-20T19:50:50 IST" duration-ms="13859" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A02_VerifySignInOption -->
+        <test-method signature="A03_VerifyFooterSection()[pri:0, instance:entrata.website.test.homepage.EntrataHomeTest@7a1234bf]" started-at="2024-10-20T19:50:50 IST" name="A03_VerifyFooterSection" description="Navigate to Entrata footer Section" finished-at="2024-10-20T19:50:58 IST" duration-ms="8069" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A03_VerifyFooterSection -->
+        <test-method signature="A04_VerifySeeHowItWorks()[pri:0, instance:entrata.website.test.homepage.EntrataHomeTest@7a1234bf]" started-at="2024-10-20T19:50:58 IST" name="A04_VerifySeeHowItWorks" description="Navigate to See How It Works" finished-at="2024-10-20T19:51:07 IST" duration-ms="8668" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"[class^='white-button center-button hover_red']"}
+  (Session info: MicrosoftEdge=130.0.2849.46)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [452c37c1024480ed0d05be59e5cf41e4, findElement {using=css selector, value=[class^='white-button center-button hover_red']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 130.0.2849.46, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57849}, msedge: {msedgedriverVersion: 130.0.2849.46 (bf1f0130f43a..., userDataDir: C:\Users\SHWETA~2\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57849/devtoo..., se:cdpVersion: 130.0.2849.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 452c37c1024480ed0d05be59e5cf41e4]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"[class^='white-button center-button hover_red']"}
+  (Session info: MicrosoftEdge=130.0.2849.46)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [452c37c1024480ed0d05be59e5cf41e4, findElement {using=css selector, value=[class^='white-button center-button hover_red']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 130.0.2849.46, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57849}, msedge: {msedgedriverVersion: 130.0.2849.46 (bf1f0130f43a..., userDataDir: C:\Users\SHWETA~2\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57849/devtoo..., se:cdpVersion: 130.0.2849.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 452c37c1024480ed0d05be59e5cf41e4
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy19.getWrappedElement(Unknown Source)
+at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:470)
+at entrata.website.object.BasePage.scrollDown(BasePage.java:51)
+at entrata.website.object.homepage.EntrataHomePage.verifySeeHowItWorks(EntrataHomePage.java:105)
+at entrata.website.test.homepage.EntrataHomeTest.A04_VerifySeeHowItWorks(EntrataHomeTest.java:42)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A04_VerifySeeHowItWorks -->
+        <test-method signature="A05_VerifyBasecamp()[pri:0, instance:entrata.website.test.homepage.EntrataHomeTest@7a1234bf]" started-at="2024-10-20T19:51:08 IST" name="A05_VerifyBasecamp" description="Navigate to Basecamp" finished-at="2024-10-20T19:51:20 IST" duration-ms="11915" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A05_VerifyBasecamp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:entrata.website.test.homepage.EntrataHomeTest@7a1234bf]" started-at="2024-10-20T19:51:20 IST" name="tearDown" finished-at="2024-10-20T19:51:21 IST" duration-ms="767" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- entrata.website.test.homepage.EntrataHomeTest -->
+    </test> <!-- HomePage -->
+  </suite> <!-- RegressionOnWebsite -->
+</testng-results>

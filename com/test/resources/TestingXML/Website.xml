@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RegressionOnWebsite">
+	<listeners>
+		<listener class-name="entrata.website.utils.ExtentReportListener">
+			Regression Website
+		</listener>
+	</listeners>
+
+	<!--HomePage--> 
+	<test name="HomePage" thread-count="3" parallel="classes">
+	<parameter name="browserName" value="Edge" />
+		<classes>
+			<class name="entrata.website.test.homepage.EntrataHomeTest" />	
+		</classes>
+	</test>   
+	<!--HomePage -->
+</suite> 
+<!-- Suite -->
